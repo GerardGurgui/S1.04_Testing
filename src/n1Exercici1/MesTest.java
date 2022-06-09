@@ -9,13 +9,13 @@ public class MesTest {
     
 
     /*Metode constructor per inicialitzar la clase on estan els metodes, 
-    també per evitar errors alhora de executar com per exemple nullPointerException
+    tambÃ© per evitar errors alhora de executar com per exemple nullPointerException
     */
     public void testMes(){
         
         mes = new Mes();
         
-        ////AFEGIIIR TAMBE A LA CLASE TEST!!
+        ////METODE AFEGIIIR TAMBE A LA CLASE TEST!!
         mes.afegirMesos();
         
     }
@@ -38,7 +38,7 @@ public class MesTest {
         
         testMes();
         boolean esperado = false;
-        //Esperem llista plena (osigui llistaBuida = false) comparem això amb el que ens retorna el metode
+        //Esperem llista plena (osigui llistaBuida = false) comparem aixÃ² amb el que ens retorna el metode
         assertEquals(esperado, mes.detectarLlistaBuida());
         
     }
@@ -49,7 +49,7 @@ public class MesTest {
         
         testMes();
         int esperado = 7;
-        //Comparem la posició esperada del element amb la que ens torna el metode
+        //Comparem la posiciÃ³ esperada del element amb la que ens torna el metode
         assertEquals(esperado, mes.identificarPosicio("Agost"));
     }
 
